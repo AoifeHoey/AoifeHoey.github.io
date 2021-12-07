@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arklow Bridge Hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <a href="index.html">
+                    <img src="images/bridge-hotel-logo.png" alt="Hoeys Bridge Hotel">
+                </a>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>Hoey's Bridge Hotel </h2>
+            <p>Ideally located, offering excellent accomodation in Arklow</p>
+            <!-- <button type="button" class="head-btn">Book Now</button> -->
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="rooms.html">rooms</a></li>
+            <!-- <li><a href="#attractions">gallery</a></li> -->
+            <li><a href="attractions.html">local attractions</a></li>
+            <!-- <li><a href="drinks.html">drinks menu</a></li> -->
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <!-- <button class="btn sign-up">check availability</button> -->
+        <!-- <button class = "btn log-in">log in</button> -->
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- <div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="chekin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="chekout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="0" value="0" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now">
+            </div>
+        </form>
+    </div> -->
+
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-bed"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Bed & Breakfast</h2>
+                    <p>Hoey's Bridge Hotel has 15 ensuite bedrooms.
+                        <br>
+                        We offer a range of breakfast options including Tea/Coffee with your stay.
+                        <br>
+                    </p>
+                    <!-- <a href="rooms.html"> -->
+                    <button type="button" class="btn" onclick="document.location='rooms.html'">Know More</button>
+                    <!-- </a> -->
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Food & Beverages</h2>
+                    <p>Enjoy a premium pint of Guinness while watching the big game or sip on a beautifully-mixed
+                        cocktail while chatting with friends.
+                        <br>The Bridge Hotel Bar is a place where you can relax and enjoy a family friendly meal and
+                        socialise with friends.
+                    </p>
+                    <button type="button" class="btn">See Drinks Menu</button>
+                    <!-- <button type="button" class="btn" onclick="document.location='rooms.html'">Know More</button> -->
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <!-- <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-music"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Karaoke Night</h2>
+                    <p>Sing your heart out with Pat & Dermot every Friday night from 8pm - 11pm.
+                        <br><br>
+                        Pick from a great selection of hit songs and enjoy the lively atmosphere.
+                    </p>
+                    <button type="button" class="btn">Choose your song</button>
+                </div>
+            </article> -->
+            <!-- end of single service -->
+            <!-- single service -->
+            <!-- <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-warehouse"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Outdoor Seating</h2>
+                    <p>Our brand new outdoor seating area is where you can enjoy a great view of the 19-arches Bridge and the Avoca River.
+                        Our outdoor speaker allows our guests to play their own music.
+
+                        <br><br> 
+                        Bring a hat and scarf though because it's fucking freezing!
+                        <br>
+                        The flapping sail on the front is enough to send you into a hypnotic trance.
+                    </p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article> -->
+            <!-- end of single service -->
+        </div>
+    </section>
+
+
+
+    <!--- <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <!-- single room -
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/double-room.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Double Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus
+                        maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias
+                        sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse
+                        commodi nemo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque,
+                        fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit
+                        eius labore, atque quo?</p>
+                    <p class="rate">
+                        <span>€49.00 /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article>
+            <!-- end of single room -->
+    <!-- single room --
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/twin-room.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Twin Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus
+                        maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias
+                        sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse
+                        commodi nemo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque,
+                        fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit
+                        eius labore, atque quo?</p>
+                    <p class="rate">
+                        <span>€49.00 /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article> 
+            <!-- end of single room ->
+            <!-- single room -->
+    <!-- <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article> -->
+    <!-- end of single room
+        </div>
+    </section> -->
+
+
+    <section class="attractions" id="attractions">
+        <div class="sec-width">
+            <div class="title">
+                <h2>Local Attractions</h2>
+            </div>
+            <div class="attractions-container">
+                <!-- single attraction -->
+                <!-- <div class="attraction">
+                    <!-- <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div> ->
+                    <h3>Family Friendly Activities</h3>
+                    <p>
+                        There are lots of choices for family friendly day trips and adventures.
+                        <br> 
+                    </p>
+                    <img src="images/ticktock.jpg" alt="attraction image">
+                    <button type="button" class="btn">See More</button>
+                    <!-- <span>attraction Name, Country</span> ->
+                </div> -->
+                <!-- end of single attraction -->
+                <!-- single attraction -->
+                <div class="attraction">
+                    <!-- <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div> -->
+                    <h3>Golfing</h3>
+                    <p>
+                        Arklow is home to a beautiful 18-hole golf link as well as being in close proximity to a number
+                        of other fantastic courses.
+
+                    </p>
+                    <img src="images/golf.jpg" alt="attraction image">
+                    
+                    <button type="button" class="btn" onclick="document.location='attractions.html'">See More</button>
+                    <!-- <span>attraction Name, Country</span> -->
+                </div>
+                <!-- end of single attraction -->
+                <!-- single attraction -->
+                <div class="attraction">
+                    <!-- <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div> -->
+                    <h3>Sight Seeing</h3>
+                    <p>
+                        Arklow is situated in County Wicklow, on the east coast, which is one of Ireland's most
+                        beautiful areas, comprised of rolling mountains, pristine beaches and numerous historic
+                        monuments.
+                    </p>
+                    <img src="images/wicklow.jpg" alt="attraction image">
+                    <!-- <span>attraction Name, Country</span> -->
+                    <button type="button" class="btn" onclick="document.location='attractions.html'">See More</button>
+                </div>
+                <!-- end of single attraction -->
+            </div>
+        </div>
+    </section>
+
+    <section class="map" id="map">
+        <div class="sec-width">
+            <div class="title">
+                <h2>Map</h2>
+            </div>
+            <div>
+                <p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.3412335439907!2d-6.1545588839934515!3d52.79818612332758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867c3fdcd7a0f8f%3A0xdf6385b5c652ca40!2sHoey&#39;s%20Bridge%20Hotel!5e0!3m2!1sen!2sie!4v1637106167241!5m2!1sen!2sie"
+                        width="990" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <br><br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div>
+                <h2></h2>
+                <ul class="social-icons">
+                    <!-- <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li> -->
+                    <li class="flex">
+                        <a href="https://www.facebook.com/Bridge-Hotel-Arklow-296977553466/">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="flex">
+                        <a href="https://www.instagram.com/thebridgearklow/?hl=en">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a> -->
+            </div>
+
+            <div>
+                <h2> </h2>
+                <!-- <p>Hoeys Bridge Hotel is a 15 Bedroom Hotel located in Arklow town close to the river Avoca and five
+                    minutes walk from the sea.
+                    Amenities close by include a 9 screen cinema located within the Bridgewater shopping centre. This is
+                    directly across the Bridge from the hotel and also houses the Maritime Museum.
+                    The Coral leisure centre is located a five minute walk away and has a swimming pool, gym and indoor
+                    racquetball courts.
+                    Arklow has numerous soccer and G.A.A. pitches and local Rugby grounds.
+                    The maritime influence is still ever present in Arklow with local fishing, rowing and sailing clubs,
+                    Sea trips can also be arranged.</p> -->
+
+            </div>
+
+            <div>
+                <h2></h2>
+                <!-- <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a> -->
+            </div>
+
+            <div>
+                <h2>Contact Us</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        The Arklow Bridge Hotel, Bridge Street, Arklow, Co. Wicklow, Ireland (Eircode: Y14A303)
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +353 402 31666
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@arklowbridgehotel.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

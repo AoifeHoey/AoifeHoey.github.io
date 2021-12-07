@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arklow Bridge Hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header-at" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <a href="index.html">
+                    <img src="images/bridge-hotel-logo.png" alt="Hoeys Bridge Hotel">
+                </a>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>Local Attractions </h2>
+            <p>Arklow is a smaller but beautiful upcoming tourist destination that is worth a visit. You will be
+                surprised by some of the unique things to do and places you can explore at this hidden destination.</p>
+            <!-- <button type="button" class="head-btn">Book Now</button> -->
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- side navbar -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="rooms.html">rooms</a></li>
+            <!-- <li><a href="#attractions">gallery</a></li> -->
+            <li><a href="attractions.html">local attractions</a></li>
+            <!-- <li><a href="drinks.html">drinks menu</a></li> -->
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <!-- <button class="btn sign-up">check availability</button> -->
+        <!-- <button class = "btn log-in">log in</button> -->
+    </div>
+    <!-- end of side navbar -->
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+    <!-- <div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="chekin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="chekout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="0" value="0" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now">
+            </div>
+        </form>
+    </div> -->
+
+
+    <!-- body content  -->
+
+    <!-- <section class="attraction sec-width" id="family-attraction">
+        <div title="title">
+            <h2>Family Attractions</h2>
+        </div> -->
+    <!-- <div class="family-container">
+            <!-- single family ->
+            <div class="family">
+                <div class="family-img">
+                    <img src="images/cinema.jpg" alt="Arklow Omniplex">
+                </div>
+                <div class="family-content">
+                    <h4>Arklow Omniplex Cinema</h4>
+                    <p>A modern 9-screen cinema, centrally located in the Bridgewater Shopping Centre, Arklow. Showing
+                        all the latest blockbuster releases and provides a kid's zone.</p>
+                    <button type="button" class="btn">View Their Website</button>
+                </div>
+            </div>
+
+            <!-- single family ->
+            <div class="family">
+                <div class="family-img">
+                    <img src="images/ticktock.jpg" alt="Tick Tock Activity Farm">
+                </div>
+                <div class="family-content">
+                    <h4>Tick Tock Activity Farm</h4>
+                    <p>Located in the lovely countryside of County Wicklow, Tick-Tock caters for toddlers and up to 10
+                        year olds. Come meet all the farmyard friends, paint on the activity bus, enjoy the indoor and
+                        outdoor play areas, pet corner, tractors and much more.</p>
+                    <button type="button" class="btn">View Their Website</button>
+                </div>
+            </div>
+
+            <!-- single family ->
+            <div class="family">
+                <div class="family-img">
+                    <img src="images/pirates-cove.jpg" alt="Pirates Cove">
+                </div>
+                <div class="family-content">
+                    <h4>Pirates Cove Courtown</h4>
+                    <p>Pirates Cove is a family run attraction in Courtown Harbour. Just a 20 minute drive away from the
+                        hotel.</p>
+                    <button type="button" class="btn">View Their Website</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="attraction sec-width" id="golf-attraction">
+        <div title="title">
+            <h2>Golfing</h2>
+        </div>
+        <div class="golf-container">
+            <!-- single golf -->
+            <div class="golf">
+                <div class="golf-img">
+                    <img src="images/golf.jpg" alt="Arklow Golf Club">
+                </div>
+                <div class="golf-content">
+                    <h4>Arklow Golf Club</h4>
+                    <p>
+                        Arklow Golf course is an 18 hole links course presenting a challenge to all level of golfers,
+                        while there are several local courses within driving distance.
+                        <br>
+                        <!-- <br>
+                        Arklow Links Green Fees
+                        <br>
+                        Individual Rate: Mon-Thu: €30; Fri: €35; Sat: €40.
+                        <br>
+                        Early Bird (before 9.30am): Mon-Thu: €25; Fri: €30; Sat: €35.
+                        <br>
+                        Twilight (after 6.00pm): Mon-Fri: €20; Sat: €30.
+                        <br>
+                        Couples Rate: Mon-Thu: €55; Fri-Sat: €70.
+                        <br>
+                        Open Fairways Accepted Mon-Fri: Two for price of one, Four for price of two. -->
+                    </p>
+                    <a href="http://www.arklowgolflinks.com/">
+                        <button type="button" class="btn">View Their Website</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- single golf -->
+            <div class="golf">
+                <div class="golf-img">
+                    <img src="images/woodenbridge.jpg" alt="Woodenbridge Golf Club">
+                </div>
+                <div class="golf-content">
+                    <h4>Woodenbridge Golf Club</h4>
+                    <p>
+                        Surrounded by rivers and mature forests, Woodenbridge Golf Club is situated just south of the
+                        village of Avoca in Wicklow, where the Avoca and Aughrim rivers meet.
+                        <br>
+                        Woodenbridge was described by the legendary Joe Carr as “Ireland’s Augusta” and “The most scenic
+                        golf course in Ireland, a hidden gem”.
+                        <br>
+                        <!-- <br>
+                        Woodenbridge Green Fees -
+                        <br>
+                        Individual Rate: Mon-Fri: €50; Sat, Sun & Bank Holiday: €60.
+                        <br>
+                        Early Bird (before 9am): Mon-Fri: €30; Sat, Sun & Bank Holiday: €30.
+                        <br>
+                        Twilight (after 5.00pm): Mon-Fri: €30; Sat, Sun & Bank Holiday: €30.
+                        <br>
+                        Group/Society Rate (20 golfers or less): Mon-Fri: €40; Sat, Sun & Bank Holiday: €45.
+                        <br>
+                        Group/Society Rate (more than 20 golfers): Mon-Thu: €35; Fri, Sat, Sun & Bank Holiday: €40. -->
+                    </p>
+                    <a href="https://www.woodenbridge.ie/">
+                        <button type="button" class="btn">View Their Website</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- single golf -->
+            <div class="golf">
+                <div class="golf-img">
+                    <img src="images/ballymoney.jpg" alt="Ballymoney Golf Club">
+                </div>
+                <div class="golf-content">
+                    <h4>Ballymoney Golf Club</h4>
+                    <p>
+                        Ballymoney Golf Club is a GUI affiliated family-run golf club that provides golfers with an
+                        affordable and enjoyable golfing experience.
+                        <br>
+                        The course is set in the picturesque surrounds of Ballymoney, and affords excellent views of
+                        local Tara Hill, which dominates the landscape.
+                        <!-- <br>
+                        <br>
+                        Ballymoney Green Fees -
+                        <br>
+                        Midweek: €20
+                        <br>
+                        Weekends & Bank Holidays: €22
+                        <br>
+                        Weekend Opens: €20
+                        <br>
+                        Club hire: €10
+                        <br>
+                        Buggy Hire: €20 -->
+                    </p>
+                    <a href="http://www.ballymoneygolfclub.ie/">
+                        <button type="button" class="btn">View Their Website</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="attraction sec-width" id="sights-attraction">
+        <div title="title">
+            <h2>Sight Seeing</h2>
+        </div>
+        <div class="sights-container">
+            <!-- single sights -->
+            <div class="sights">
+                <div class="sights-img">
+                    <img src="images/wicklow.jpg" alt="The Wicklow Way">
+                </div>
+                <div class="sights-content">
+                    <h4>The Wicklow Way</h4>
+                    <p>
+                        The Wicklow Way is a 131-kilometre long-distance trail that crosses the Wicklow Mountains in
+                        Ireland.
+                        <br>
+                        It runs from Marlay Park in the southern suburbs of Dublin through County Wicklow and ends in
+                        the village of Clonegal in County Carlow.
+                    </p>
+                    <!-- <button type="button" class="btn">Read More About It</button> -->
+                </div>
+            </div>
+
+            <!-- single sights -->
+            <div class="sights">
+                <div class="sights-img">
+                    <img src="images/Glendough.jpg" alt="Glendalough">
+                </div>
+                <div class="sights-content">
+                    <h4>Glendalough</h4>
+                    <p>
+                        Glendalough is a glacial valley in County Wicklow, Ireland, renowned for an Early Medieval
+                        monastic settlement founded in the 6th century by St Kevin.
+                        <br>
+                        From 1825 to 1957, the head of the Glendalough Valley was the site of a galena lead mine.
+                    </p>
+                    <a href="https://visitwicklow.ie/attractions-in-wicklow/">
+                        <button type="button" class="btn">Read More On Local Sights</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div>
+                <h4></h4>
+                <ul class="social-icons">
+                    <!-- <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li> -->
+                    <li class="flex">
+                        <a href="https://www.facebook.com/Bridge-Hotel-Arklow-296977553466/">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="flex">
+                        <a href="https://www.instagram.com/thebridgearklow/?hl=en">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h4> </h4>
+
+
+            </div>
+
+            <div>
+                <h4></h4>
+
+            </div>
+
+            <div>
+                <h4>Contact Us</h4>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        The Arklow Bridge Hotel, Bridge Street, Arklow, Co. Wicklow, Ireland (Eircode: Y14A303)
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +353 402 31666
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@arklowbridgehotel.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
