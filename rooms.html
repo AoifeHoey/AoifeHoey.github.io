@@ -11,6 +11,54 @@
 </head>
 
 <body>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        @media(max-width: 400px) {
+            .sidenav {
+                width: 100vw;
+            }
+        }
+
+        .image-grid {
+            --gap: 16px;
+            --num-cols: 4;
+            --row-height: 300px;
+
+            box-sizing: border-box;
+            padding: var(--gap);
+
+            display: grid;
+            grid-template-columns: repeat(var(--num-cols), 1fr);
+            grid-auto-rows: var(--row-height);
+            gap: var(--gap);
+        }
+
+        .image-grid>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-grid-col-2 {
+            grid-column: span 2;
+        }
+
+        .image-grid-row-2 {
+            grid-row: span 2;
+        }
+
+        /* Anything under 1024px */
+        @media screen and (max-width: 1024px) {
+            .image-grid {
+                --num-cols: 2;
+                --row-height: 200px;
+            }
+        }
+    </style>
 
     <!-- header -->
     <header class="header-r" id="header">
@@ -43,7 +91,6 @@
             <li><a href="index.html">home</a></li>
             <li><a href="about.html">about us</a></li>
             <li><a href="rooms.html">rooms</a></li>
-            <!--<li><a href="#attractions">gallery</a></li>-->
             <li><a href="attractions.html">local attractions</a></li>
             <!-- <li><a href="drinks.html">drinks menu</a></li> -->
             <li><a href="contact.html">contact us</a></li>
@@ -54,34 +101,6 @@
     <!-- fullscreen modal -->
     <div id="modal"></div>
     <!-- end of fullscreen modal -->
-
-    <!-- <div class="book">
-        <form class="book-form">
-            <div class="form-item">
-                <label for="checkin-date">Check In Date: </label>
-                <input type="date" id="chekin-date">
-            </div>
-            <div class="form-item">
-                <label for="checkout-date">Check Out Date: </label>
-                <input type="date" id="chekout-date">
-            </div>
-            <div class="form-item">
-                <label for="adult">Adults: </label>
-                <input type="number" min="1" value="1" id="adult">
-            </div>
-            <div class="form-item">
-                <label for="children">Children: </label>
-                <input type="number" min="0" value="0" id="children">
-            </div>
-            <div class="form-item">
-                <label for="rooms">Rooms: </label>
-                <input type="number" min="1" value="1" id="rooms">
-            </div>
-            <div class="form-item">
-                <input type="submit" class="btn" value="Book Now">
-            </div>
-        </form>
-    </div> -->
 
     <!-- body content  -->
     <section class="rooms" id="rooms">
@@ -107,163 +126,38 @@
                         - Check-out 12pm<br>                 - Late check out on Sunday if available <br>
                     </p>
                 </div>
-                <div class="room">
-                    <div class="slideshow-container">
-
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertest">1 / 10</div> -->
-                            <img src="images/room28.jpg" style="width:100%">
-                            <!-- <div class="text">Caption One</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">2 / 10</div> -->
-                            <img src="images/room1.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Two</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">3 / 10</div> -->
-                            <img src="images/room2.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">4 / 10</div> -->
-                            <img src="images/room5.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">5 / 10</div> -->
-                            <img src="images/room8.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">6 / 10</div> -->
-                            <img src="images/room9.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">7 / 10</div> -->
-                            <img src="images/room12.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">8 / 10</div> -->
-                            <img src="images/room13.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">9 / 10</div> -->
-                            <img src="images/room16.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room20.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room25.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room26.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room29.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room31.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room32.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room35.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room41.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/room42.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/img4.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/img13.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/bar.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/bar1.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/bar3.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/pub3.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/pub10.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/Gallery-007.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">10 / 10</div> -->
-                            <img src="images/Gallery-003.jpg" style="width:100%">
-                            <!-- <div class="text">Caption Three</div> -->
-                        </div>
-                        
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <br>
-    
-                    <!-- The dots/circles -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
-
+    <div class="image-grid">
+        <img class="image-grid-col-2 image-grid-row-2" src="/images/room1.jpg" alt="room">
+        <img src="/images/room4.jpg" alt="room">
+        <img src="/images/room5.jpg" alt="room">
+        <img src="/images/room8.jpg" alt="room">
+        <img src="/images/room9.jpg" alt="room">
+        <img class="image-grid-col-2 image-grid-row-2" src="/images/room12.jpg" alt="room">
+        <img src="/images/room16.jpg" alt="room">
+        <img src="/images/room21.jpg" alt="room">
+        <img src="/images/room23.jpg" alt="room">
+        <img src="/images/room25.jpg" alt="room">
+        <img class="image-grid-col-2 image-grid-row-2" src="/images/room27.jpg" alt="room">
+        <img src="/images/room31.jpg" alt="room">
+        <img src="/images/room32.jpg" alt="room">
+        <img src="/images/room35.jpg" alt="room">
+        <img src="/images/room40.jpg" alt="room">
+        <img class="image-grid-col-2 image-grid-row-2" src="/images/room41.jpg" alt="room">
+        <img src="/images/room42.jpg" alt="room">
+        <img src="/images/bar2.jpg" alt="room">
+        <img src="/images/pub1.jpg" alt="room">
+        <img src="/images/pub2.jpg" alt="room">
+        <img class="image-grid-col-2 image-grid-row-2" src="/images/outside-bridge.jpg" alt="room">
+        <img src="/images/pub4.jpg" alt="room">
+        <img src="/images/pub10.jpg" alt="room">
+        <img src="/images/pub3.jpg" alt="room">
+        <img src="/images/front-door.jpg" alt="room">
+    </div>
 
     <!-- end of body content -->
 
